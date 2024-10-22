@@ -63,7 +63,7 @@ void stopCharging() {
 }
 
 void handleStopButton(unsigned long currentTime) {
-  if (digitalRead(stopButtonPin) == LOW && (currentTime - lastStopButtonPressTime) > debounceDelay) {
+  if (digitalRead(stopButtonPin) == LOW && (currentTime - lastStopButtonPressTime) > debounceDelay && isCharging) {
     if (stopButtonPressStart == 0) {
       stopButtonPressStart = currentTime;  
     }
@@ -74,7 +74,7 @@ void handleStopButton(unsigned long currentTime) {
     stopButtonPressStart = 0;  
   }
 
-  if (stopButtonPressStart != 0 && (currentTime - stopButtonPressStart) >= longPressDuration) {
+  if (stopButtonPressStart != 0 && (currentTime - stopButtonPressStart) >= longPressDuration && isCharging) {
     stopCharging();  
     stopButtonPressStart = 0;  
   }
