@@ -193,7 +193,7 @@ void loop() {
 
 ### Poze ale setup-ului fizic
 
-![Schema_Hardware](/Set-up_Fizic.jpg)
+![Schema_Hardware](/Set-up_Fizic.jpeg)
 
 ### Video cu funcționalitatea montajului fizic
 
