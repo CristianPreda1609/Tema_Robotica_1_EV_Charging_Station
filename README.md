@@ -76,8 +76,8 @@ void blinkLed(int pin) {
   }
 }
 ```
-**Functie pentru resetarea statiei la starea initiala**
-**Reseteaza tot: toate LED-urile de nivel baterie sunt oprite, RGB verde **
+**Functie pentru resetarea statiei la starea initiala**\
+**Reseteaza tot: toate LED-urile de nivel baterie sunt oprite, RGB verde**
 ```
 void resetStation() {
   for (int i = 0; i < 4; i++) {
@@ -89,7 +89,7 @@ void resetStation() {
   isCharging = false;
 }
 ```
-**Functie pentru a porni incarcarea**
+**Functie pentru a porni incarcarea**\
 **Schimba statia la ocupata (RGB rosu)**
 ```
 void startCharging() {
@@ -101,7 +101,7 @@ void startCharging() {
   lastLedBlinkTime = millis();      
 }
 ```
-**Functie pentru a opri incarcarea**
+**Functie pentru a opri incarcarea**\
 **Opreste incarcarea, face intermitenta la toate LED-urile de baterie de 3 ori, apoi reseteaza statia**
 ```
 void stopCharging() {
@@ -118,7 +118,7 @@ void stopCharging() {
   resetStation();  
 }
 ```
-**Functie pentru a gestiona logica butonului de stop**
+**Functie pentru a gestiona logica butonului de stop**\
 **Verifica daca butonul de stop a fost apasat si statia se incarca**
 ```
 void handleStopButton(unsigned long currentTime) {
