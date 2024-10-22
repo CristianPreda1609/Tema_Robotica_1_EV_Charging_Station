@@ -29,7 +29,7 @@ Funcționalitatea principală:
 - **4x LED-uri:** Pentru simularea procentelor de încărcare (L1, L2, L3, L4)
 - **1x LED RGB:** Pentru indicarea stării stației (liber/ocupat)
 - **2x Butoane:** Pentru controlul start/stop al procesului de încărcare
-- **8x Rezistoare:** (6x de 220Ω și 2x de 1KΩ)
+- **8x Rezistoare:** (6x de 330Ω și 2x de 1KΩ)
 - **Breadboard**
 - **Linii de legătură**
 
